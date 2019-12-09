@@ -10,6 +10,29 @@
     $(window).ready(function() {
         $('#preloader').delay(200).fadeOut('fade');
     });
+  
+  
+    /* 
+   One Page Navigation
+   ========================================================================== */
+
+
+    $(window).on('load', function() {
+       
+        $('body').scrollspy({
+            target: '.navbar-collapse',
+            offset: 195
+        });
+
+        $(window).on('scroll', function() {
+            if ($(window).scrollTop() > 100) {
+                $('.fixed-top').addClass('menu-bg');
+            } else {
+                $('.fixed-top').removeClass('menu-bg');
+            }
+        });
+
+    });
     
      $("html").easeScroll();
 
@@ -114,27 +137,7 @@
       return false;
     })
 
-  /* 
-   One Page Navigation
-   ========================================================================== */
 
-
-    $(window).on('load', function() {
-       
-        $('body').scrollspy({
-            target: '.navbar-collapse',
-            offset: 195
-        });
-
-        $(window).on('scroll', function() {
-            if ($(window).scrollTop() > 100) {
-                $('.fixed-top').addClass('menu-bg');
-            } else {
-                $('.fixed-top').removeClass('menu-bg');
-            }
-        });
-
-    });
 
 
 
