@@ -1,3 +1,8 @@
+   
+   .navbar{
+      width:100%;
+   }
+
 @media only screen and (min-width: 2160px) {    
 
 }
@@ -91,6 +96,7 @@ h1 {
  #courses-slider .owl-nav{
         display:none
     }
+
     
 }
 
