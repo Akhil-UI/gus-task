@@ -88,6 +88,9 @@ h1 {
     padding-left:20px;
     padding-right:20px;
 } 
+ #courses-slider .owl-nav{
+        display:none
+    }
     
 }
 
