@@ -2,19 +2,17 @@
 [Table of contents]
 
 01.	RESET CSS
-02. GENERAL CSS(body, header, btn, form, list, link, img, middle title, section bg, margin, padding, icon color, breadcrumb)
+02. GENERAL CSS
 03. HEADER CSS
-04. header SECTION CSS
-05. CUSTOMER CSS
-06. PROMO SECTION CSS
-08. OVERVIEW SECTION CSS
-09. FEATURE SECTION CSS
-10. COUNTER SECTION CSS
-11. PRICING TABLE SECTION CSS
-12. TESTIMONIAL SECTION CSS
-13. CONTACT US SECTION CSS
-14. BACK TO TOP SECTION CSS
-15. PRELOADER CSS
+04. ABOUTUS SECTION CSS
+05. SERVICES CSS
+06. COURSES SECTION CSS
+08. MANAGMENT SECTION CSS
+09. BLOG SECTION CSS
+10. CONTACT SECTION CSS
+11. PRELOADER CSS SECTION CSS
+12. BACK TO TOP SECTION CSS
+
 
 /* ----------------------------------------------------
 	IMPORT GOOGLE FONTS
@@ -156,6 +154,9 @@ h1{
 .gradient-btn:hover {
   background-position: right;
   color: #ffffff;
+}
+textarea {
+   resize: none;
 }
 
 
