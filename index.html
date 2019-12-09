@@ -8,7 +8,7 @@
     <title>GUS Task</title>
 
     <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" >
+    <link rel="stylesheet" href="css/bootstrap.min.css" >
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css">
     <link rel="stylesheet" href="css/owl.carousel.css">
     <link rel="stylesheet" href="css/style.css">
@@ -54,6 +54,10 @@
                 <a class="nav-link page-scroll" href="#contact">Contact</a>
               </li> 
             </ul>
+              <span class="navbar-text ml-3">
+                  <button class="btn gradient-btn" type="button" data-toggle="modal" data-target="#enquireForm">Enquire</button>
+              </span>
+              
           </div>
         </div>
       </nav>  
@@ -78,7 +82,7 @@
         </div> 
       </div>   
     
-    <div class="section-shape">
+    <div class="section-shape" style="pointer-events: none;">
       <img src="img/shape-bg.png" alt="shape image">
     </div>
     </header>
@@ -163,7 +167,7 @@
              </div>
     
         <div class="row justify-content-center" data-aos="fade-zoom-in" data-aos-easing="ease-in-back" data-aos-delay="300" data-aos-offset="0">
-            <div class="col-sm-3 col-8">
+            <div class="col-sm-3 col-10">
                 <div class="service_section text-center">
                     <div class="service_section-content">
                         <i class="fas fa-users-cog"></i>
@@ -175,7 +179,7 @@
                 </div>
             </div>
 
-            <div class="col-sm-3 col-8 ">
+            <div class="col-sm-3 col-10 ">
                 <div class="service_section text-center">
                     <div class="service_section-content">
                         <i class="fas fa-users-cog"></i>
@@ -187,7 +191,7 @@
                 </div>
             </div>
             
-             <div class="col-sm-3 col-8 ">
+             <div class="col-sm-3 col-10 ">
                 <div class="service_section text-center">
                     <div class="service_section-content">
                         <i class="fas fa-users-cog"></i>
@@ -199,7 +203,7 @@
                 </div>
             </div>
 
-            <div class="col-sm-3 col-8">
+            <div class="col-sm-3 col-10">
                 <div class="service_section text-center">
                     <div class="service_section-content">
                         <i class="fas fa-users-cog"></i>
@@ -333,7 +337,7 @@
              </div>
 
     <div class="row justify-content-center" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="400">
-        <div class="col-sm-3 col-8">
+        <div class="col-sm-3 ">
             <div class="mng-block text-center">
                 <img src="img/prof-1.png" class="" alt="...">  
                 <div class="mng-details">
@@ -348,7 +352,7 @@
             </div>
         </div>
         
-        <div class="col-sm-3 col-8">
+        <div class="col-sm-3 col-10">
             <div class="mng-block text-center">
                 <img src="img/prof-1.png" class="" alt="...">  
                 <div class="mng-details">
@@ -363,7 +367,7 @@
             </div>
         </div>
         
-        <div class="col-sm-3 col-8">
+        <div class="col-sm-3 col-10">
             <div class="mng-block text-center">
                 <img src="img/prof-1.png" class="" alt="...">  
                 <div class="mng-details">
@@ -378,7 +382,7 @@
             </div>
         </div>
         
-        <div class="col-sm-3 col-8">
+        <div class="col-sm-3 col-10">
             <div class="mng-block text-center">
                 <img src="img/prof-1.png" class="" alt="...">  
                 <div class="mng-details">
@@ -603,6 +607,54 @@
 	</div>
 </footer>
 <!-- footer end -->  
+     
+     
+<!-- Modal -->
+<div class="modal fade" id="enquireForm" tabindex="-1" role="dialog" aria-labelledby="enquireForm" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLongTitle">Submit Details</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <form>
+      <div class="modal-body px-4">
+            
+              <div class="form-group">
+                <label for="fname">First Name</label>
+                <input id="fname" type="text" class="form-control" name="name" placeholder="Enter first name" required="required">
+              </div>
+              <div class="form-group">
+                <label for="lname">Last Name</label>
+                <input id="lname" type="text" class="form-control" name="name" placeholder="Enter last name" required="required">
+              </div>
+              <div class="form-group">
+                <label for="courses">select</label>
+                    <select class="form-control" id="courses">
+                      <option>course 1</option>
+                      <option>course 2</option>
+                      <option>course 3</option>
+                      <option>course 4</option>
+                      <option>course 5</option>
+                    </select>
+              </div>
+              <div class="form-group">
+                <label for="message">Message</label>
+                <textarea class="form-control" id="message" rows="3"></textarea>
+              </div>
+  
+
+            
+      </div>
+      <div class="modal-footer justify-content-center">
+        <button type="submit" class="btn gradient-btn">Submit</button>
+      </div>
+      </form>
+    </div>
+  </div>
+</div>
       
   <!-- Go To Top Link -->
     <a href="#" class="back-to-top">
