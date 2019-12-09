@@ -8,7 +8,7 @@
       
      //   preloader
     $(window).ready(function() {
-        $('#preloader_').delay(200).fadeOut('fade');
+        $('#preloader').delay(200).fadeOut('fade');
     });
   
   
