@@ -11,7 +11,9 @@
         $('#preloader').delay(200).fadeOut('fade');
     });
   
-  
+       $(".navbar-toggler").click(function() { 
+        $('.navbar').addClass('menu-bg');
+    });
     /* 
    One Page Navigation
    ========================================================================== */
